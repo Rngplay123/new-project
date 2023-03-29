@@ -5,13 +5,13 @@ pipeline {
 
      stage('Git Checkout'){
          steps{
-               git branch: 'main', url: 'https://github.com/anuj9689/django-notes-app.git'
+               git branch: 'main', url: https://github.com/Rngplay123/new-project.git
          }
      }
      stage('UNIT Testing'){
         
          steps{
-              sh 'mvn test'
+              sh 'gradle test'
          }
      }
 
