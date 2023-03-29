@@ -11,7 +11,7 @@ pipeline {
      }
      stage('UNIT Testing'){
          steps{
-             sh './gradlew wrapper --gradle-version=7.6'
+             sh './gradlew clean build'
          }
      }
   }
